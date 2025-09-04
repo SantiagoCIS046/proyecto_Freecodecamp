@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Documentación Técnica: Pseudo-Selectores CSS y Diseño Responsivo
+    </title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Guía de Pseudo-Selectores CSS y Diseño Responsivo</h1>
+    </header>
+    <nav id="navbar">
+      <header>Navegación</header>
+      <a href="#intro" class="nav-link">Introducción</a>
+      <a href="#pseudo-selectors" class="nav-link">Pseudo-Selectores</a>
+      <a href="#balance-sheet" class="nav-link">Ejemplo de Balance</a>
+      <a href="#responsive" class="nav-link">Diseño Responsivo</a>
+      <a href="#piano-demo" class="nav-link">Demo de Piano</a>
+      <a href="#cat-painting" class="nav-link">Caja de Arte Gato</a>
+      <a href="#accessibility" class="nav-link">Accesibilidad</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="intro">
+        <header>Introducción</header>
+        <p>
+          Esta documentación cubre técnicas avanzadas de CSS incluyendo
+          pseudo-selectores, diseño responsivo y características de
+          accesibilidad.
+        </p>
+        <p>
+          Exploraremos ejemplos prácticos como una tabla de balance, un
+          componente de piano responsivo y elementos artísticos creativos.
+        </p>
+        <code>Ejemplo de CSS básico:</code>
+        <pre><code>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}</code></pre>
+      </section>
+      <section class="main-section" id="pseudo-selectors">
+        <header>Pseudo-Selectores</header>
+        <p>
+          Los pseudo-selectores permiten estilizar elementos basados en su
+          estado o posición.
+        </p>
+        <ul>
+          <li>
+            <code>:hover</code> - Estilos cuando el mouse está sobre el elemento
+          </li>
+          <li>
+            <code>:focus-visible</code> - Estilos cuando el elemento está
+            enfocado vía teclado
+          </li>
+          <li>
+            <code>:active</code> - Estilos cuando el elemento está siendo
+            activado
+          </li>
+          <li><code>:nth-child()</code> - Selecciona elementos por posición</li>
+          <li><code>:not()</code> - Excluye ciertos elementos</li>
+          <li><code>:first-child</code> - Selecciona el primer hijo</li>
+          <li><code>::before</code> - Inserta contenido antes del elemento</li>
+          <li><code>::after</code> - Inserta contenido después del elemento</li>
+        </ul>
+        <code>Ejemplo de código con pseudo-selectores:</code>
+        <pre><code>button:hover {
+    background-color: #ff0000;
+}
+
+button:focus-visible {
+    outline: 2px solid #0000ff;
+}</code></pre>
+      </section>
+      <section class="main-section" id="balance-sheet">
+        <header>Ejemplo de Balance</header>
+        <p>
+          Esta tabla demuestra varios pseudo-selectores para estilizar filas y
+          celdas.
+        </p>
+        <table id="balance-table">
+          <thead>
+            <tr>
+              <th>Categoría</th>
+              <th>Monto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Activos</td>
+              <td>$100,000</td>
+            </tr>
+            <tr>
+              <td>Pasivos</td>
+              <td>$50,000</td>
+            </tr>
+            <tr>
+              <td>Patrimonio</td>
+              <td>$50,000</td>
+            </tr>
+            <tr>
+              <td>Ingresos</td>
+              <td>$75,000</td>
+            </tr>
+            <tr>
+              <td>Gastos</td>
+              <td>$25,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="main-section" id="responsive">
+        <header>Diseño Responsivo</header>
+        <p>
+          El diseño responsivo asegura que tu layout se adapte a diferentes
+          tamaños de pantalla usando media queries.
+        </p>
+        <p>Puntos de quiebre clave:</p>
+        <ul>
+          <li>Móvil: 768px</li>
+          <li>Tablet: 768px - 1024px</li>
+          <li>Escritorio: > 1024px</li>
+        </ul>
+        <code>Ejemplo de media query:</code>
+        <pre><code>@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}</code></pre>
+      </section>
+      <section class="main-section" id="piano-demo">
+        <header>Demo de Piano</header>
+        <p>
+          Este componente interactivo de piano demuestra layout responsivo y
+          pseudo-selectores.
+        </p>
+        <div id="piano">
+          <img
+            class="logo"
+            src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+            alt="freeCodeCamp Logo"
+          />
+          <div class="keys">
+            <div class="key"></div>
+            <div class="key black--key"></div>
+            <div class="key black--key"></div>
+            <div class="key"></div>
+            <div class="key black--key"></div>
+            <div class="key black--key"></div>
+            <div class="key black--key"></div>
+
+            <div class="key"></div>
+            <div class="key black--key"></div>
+            <div class="key black--key"></div>
+            <div class="key"></div>
+            <div class="key black--key"></div>
+            <div class="key black--key"></div>
+            <div class="key black--key"></div>
+
+            <div class="key"></div>
+            <div class="key black--key"></div>
+            <div class="key black--key"></div>
+            <div class="key"></div>
+            <div class="key black--key"></div>
+            <div class="key black--key"></div>
+            <div class="key black--key"></div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section" id="cat-painting">
+        <header>Caja de Arte Gato</header>
+        <p>
+          Esta sección muestra CSS creativo con gradientes, posicionamiento y
+          pseudo-elementos.
+        </p>
+        <div class="art-box">
+          <div class="cat-head">
+            <div class="cat-ears">
+              <div class="cat-left-ear">
+                <div class="cat-left-inner-ear"></div>
+              </div>
+              <div class="cat-right-ear">
+                <div class="cat-right-inner-ear"></div>
+              </div>
+            </div>
+
+            <div class="cat-eyes">
+              <div class="cat-left-eye">
+                <div class="cat-left-inner-eye"></div>
+              </div>
+              <div class="cat-right-eye">
+                <div class="cat-right-inner-eye"></div>
+              </div>
+            </div>
+
+            <div class="cat-nose"></div>
+
+            <div class="cat-mouth">
+              <div class="cat-mouth-line-left"></div>
+              <div class="cat-mouth-line-right"></div>
+            </div>
+
+            <div class="cat-whiskers">
+              <div class="cat-whiskers-left">
+                <div class="cat-whisker-left-top"></div>
+                <div class="cat-whisker-left-middle"></div>
+                <div class="cat-whisker-left-bottom"></div>
+              </div>
+              <div class="cat-whiskers-right">
+                <div class="cat-whisker-right-top"></div>
+                <div class="cat-whisker-right-middle"></div>
+                <div class="cat-whisker-right-bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section" id="accessibility">
+        <header>Accesibilidad</header>
+        <p>
+          Asegurar que tu sitio web sea accesible para todos los usuarios es
+          crucial.
+        </p>
+        <ul>
+          <li>Usa elementos HTML semánticos</li>
+          <li>Proporciona texto alternativo para imágenes</li>
+          <li>Asegura suficiente contraste de color</li>
+          <li>Haz visibles los estados de foco</li>
+          <li>Usa estructura lógica de encabezados</li>
+        </ul>
+        <p>Esta página incluye:</p>
+        <ul>
+          <li>Jerarquía apropiada de encabezados</li>
+          <li>Soporte de navegación por teclado</li>
+          <li>Indicadores de foco visibles</li>
+          <li>Texto alternativo para imágenes decorativas</li>
+        </ul>
+      </section>
+      <section class="design-notes">
+        <header>Notas de Diseño</header>
+        <ul>
+          <li>
+            Usé pseudo-selectores :hover, :focus-visible, :active, :nth-child(),
+            :not(), :first-child, ::before y ::after
+          </li>
+          <li>
+            Implementé rayado de tabla con :nth-child(odd) y :nth-child(even)
+          </li>
+          <li>Agregué efectos hover en filas de tabla y teclas de piano</li>
+          <li>
+            Usé ::before y ::after para marcadores visuales en teclas de piano y
+            elementos artísticos
+          </li>
+          <li>
+            Puntos de quiebre responsivos en 768px y 480px para móvil y tablet
+          </li>
+          <li>Aseguré navegación por teclado con estados de foco visibles</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Documentación Técnica. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
