@@ -1,128 +1,126 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Documentación Técnica: Pseudo-Selectores CSS y Diseño Responsivo
+      Technical Documentation: CSS Pseudo-Selectors and Responsive Design
     </title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Guía de Pseudo-Selectores CSS y Diseño Responsivo</h1>
+      <h1>Guide to CSS Pseudo-Selectors and Responsive Design</h1>
     </header>
     <nav id="navbar">
-      <header>Navegación</header>
-      <a href="#intro" class="nav-link">Introducción</a>
-      <a href="#pseudo-selectors" class="nav-link">Pseudo-Selectores</a>
-      <a href="#balance-sheet" class="nav-link">Ejemplo de Balance</a>
-      <a href="#responsive" class="nav-link">Diseño Responsivo</a>
-      <a href="#piano-demo" class="nav-link">Demo de Piano</a>
-      <a href="#cat-painting" class="nav-link">Caja de Arte Gato</a>
-      <a href="#accessibility" class="nav-link">Accesibilidad</a>
+      <header>Navigation</header>
+      <a href="#intro" class="nav-link">Introduction</a>
+      <a href="#pseudo-selectors" class="nav-link">Pseudo-Selectors</a>
+      <a href="#balance-sheet" class="nav-link">Balance Example</a>
+      <a href="#responsive" class="nav-link">Responsive Design</a>
+      <a href="#piano-demo" class="nav-link">Piano Demo</a>
+      <a href="#cat-painting" class="nav-link">Cat Art Box</a>
+      <a href="#accessibility" class="nav-link">Accessibility</a>
     </nav>
     <main id="main-doc">
       <section class="main-section" id="intro">
-        <header>Introducción</header>
+        <header>Introduction</header>
         <p>
-          Esta documentación cubre técnicas avanzadas de CSS incluyendo
-          pseudo-selectores, diseño responsivo y características de
-          accesibilidad.
+          This documentation covers advanced CSS techniques including
+          pseudo-selectors, responsive design, and accessibility features.
         </p>
         <p>
-          Exploraremos ejemplos prácticos como una tabla de balance, un
-          componente de piano responsivo y elementos artísticos creativos.
+          We will explore practical examples such as a balance sheet, a
+          responsive piano component, and creative artistic elements.
         </p>
-        <code>Ejemplo de CSS básico:</code>
+        <code>Basic CSS example:</code>
         <pre><code>body {
     font-family: Arial, sans-serif;
     margin: 0;
 }</code></pre>
       </section>
       <section class="main-section" id="pseudo-selectors">
-        <header>Pseudo-Selectores</header>
+        <header>Pseudo-Selectors</header>
         <p>
-          Los pseudo-selectores permiten estilizar elementos basados en su
-          estado o posición.
+          Pseudo-selectors allow styling elements based on their state or
+          position.
         </p>
         <ul>
           <li>
-            <code>:hover</code> - Estilos cuando el mouse está sobre el elemento
+            <code>:hover</code> - Styles when the mouse is over the element
           </li>
           <li>
-            <code>:focus-visible</code> - Estilos cuando el elemento está
-            enfocado vía teclado
+            <code>:focus-visible</code> - Styles when the element is focused via
+            keyboard
           </li>
           <li>
-            <code>:active</code> - Estilos cuando el elemento está siendo
-            activado
+            <code>:active</code> - Styles when the element is being activated
           </li>
-          <li><code>:nth-child()</code> - Selecciona elementos por posición</li>
-          <li><code>:not()</code> - Excluye ciertos elementos</li>
-          <li><code>:first-child</code> - Selecciona el primer hijo</li>
-          <li><code>::before</code> - Inserta contenido antes del elemento</li>
-          <li><code>::after</code> - Inserta contenido después del elemento</li>
+          <li><code>:nth-child()</code> - Selects elements by position</li>
+          <li><code>:not()</code> - Excludes certain elements</li>
+          <li><code>:first-child</code> - Selects the first child</li>
+          <li><code>::before</code> - Inserts content before the element</li>
+          <li><code>::after</code> - Inserts content after the element</li>
         </ul>
-        <code>Ejemplo de código con pseudo-selectores:</code>
+        <code>Example code with pseudo-selectors:</code>
         <pre><code>button:hover {
-    background-color: #ff0000;
-}
-
-button:focus-visible {
-    outline: 2px solid #0000ff;
-}</code></pre>
+            background-color: #ff0000;
+        }
+        
+        button:focus-visible {
+            outline: 2px solid #0000ff;
+        }</code></pre>
       </section>
       <section class="main-section" id="balance-sheet">
-        <header>Ejemplo de Balance</header>
+        <header>Balance Example</header>
         <p>
-          Esta tabla demuestra varios pseudo-selectores para estilizar filas y
-          celdas.
+          This table demonstrates various pseudo-selectors for styling rows and
+          cells.
         </p>
         <table id="balance-table">
           <thead>
             <tr>
-              <th>Categoría</th>
-              <th>Monto</th>
+              <th>Category</th>
+              <th>Amount</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Activos</td>
+              <td>Assets</td>
               <td>$100,000</td>
             </tr>
             <tr>
-              <td>Pasivos</td>
+              <td>Liabilities</td>
               <td>$50,000</td>
             </tr>
             <tr>
-              <td>Patrimonio</td>
+              <td>Equity</td>
               <td>$50,000</td>
             </tr>
             <tr>
-              <td>Ingresos</td>
+              <td>Revenue</td>
               <td>$75,000</td>
             </tr>
             <tr>
-              <td>Gastos</td>
+              <td>Expenses</td>
               <td>$25,000</td>
             </tr>
           </tbody>
         </table>
       </section>
       <section class="main-section" id="responsive">
-        <header>Diseño Responsivo</header>
+        <header>Responsive Design</header>
         <p>
-          El diseño responsivo asegura que tu layout se adapte a diferentes
-          tamaños de pantalla usando media queries.
+          Responsive design ensures that your layout adapts to different screen
+          sizes using media queries.
         </p>
-        <p>Puntos de quiebre clave:</p>
+        <p>Key breakpoints:</p>
         <ul>
-          <li>Móvil: 768px</li>
+          <li>Mobile: 768px</li>
           <li>Tablet: 768px - 1024px</li>
-          <li>Escritorio: > 1024px</li>
+          <li>Desktop: > 1024px</li>
         </ul>
-        <code>Ejemplo de media query:</code>
+        <code>Media query example:</code>
         <pre><code>@media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -130,10 +128,10 @@ button:focus-visible {
 }</code></pre>
       </section>
       <section class="main-section" id="piano-demo">
-        <header>Demo de Piano</header>
+        <header>Piano Demo</header>
         <p>
-          Este componente interactivo de piano demuestra layout responsivo y
-          pseudo-selectores.
+          This interactive piano component demonstrates responsive layout and
+          pseudo-selectors.
         </p>
         <div id="piano">
           <img
@@ -169,10 +167,10 @@ button:focus-visible {
         </div>
       </section>
       <section class="main-section" id="cat-painting">
-        <header>Caja de Arte Gato</header>
+        <header>Cat Art Box</header>
         <p>
-          Esta sección muestra CSS creativo con gradientes, posicionamiento y
-          pseudo-elementos.
+          This section shows creative CSS with gradients, positioning and
+          pseudo-elements.
         </p>
         <div class="art-box">
           <div class="cat-head">
@@ -217,50 +215,47 @@ button:focus-visible {
         </div>
       </section>
       <section class="main-section" id="accessibility">
-        <header>Accesibilidad</header>
-        <p>
-          Asegurar que tu sitio web sea accesible para todos los usuarios es
-          crucial.
-        </p>
+        <header>Accessibility</header>
+        <p>Ensuring that your website is accessible to all users is crucial.</p>
         <ul>
-          <li>Usa elementos HTML semánticos</li>
-          <li>Proporciona texto alternativo para imágenes</li>
-          <li>Asegura suficiente contraste de color</li>
-          <li>Haz visibles los estados de foco</li>
-          <li>Usa estructura lógica de encabezados</li>
+          <li>Use semantic HTML elements</li>
+          <li>Provide alternative text for images</li>
+          <li>Ensure sufficient color contrast</li>
+          <li>Make focus states visible</li>
+          <li>Use logical heading structure</li>
         </ul>
-        <p>Esta página incluye:</p>
+        <p>This page includes:</p>
         <ul>
-          <li>Jerarquía apropiada de encabezados</li>
-          <li>Soporte de navegación por teclado</li>
-          <li>Indicadores de foco visibles</li>
-          <li>Texto alternativo para imágenes decorativas</li>
+          <li>Appropriate heading hierarchy</li>
+          <li>Keyboard navigation support</li>
+          <li>Visible focus indicators</li>
+          <li>Alternative text for decorative images</li>
         </ul>
       </section>
       <section class="design-notes">
-        <header>Notas de Diseño</header>
+        <header>Design Notes</header>
         <ul>
           <li>
-            Usé pseudo-selectores :hover, :focus-visible, :active, :nth-child(),
-            :not(), :first-child, ::before y ::after
+            Used pseudo-selectors :hover, :focus-visible, :active, :nth-child(),
+            :not(), :first-child, ::before and ::after
           </li>
           <li>
-            Implementé rayado de tabla con :nth-child(odd) y :nth-child(even)
+            Implemented table striping with :nth-child(odd) and :nth-child(even)
           </li>
-          <li>Agregué efectos hover en filas de tabla y teclas de piano</li>
+          <li>Added hover effects on table rows and piano keys</li>
           <li>
-            Usé ::before y ::after para marcadores visuales en teclas de piano y
-            elementos artísticos
+            Used ::before and ::after for visual markers on piano keys and
+            artistic elements
           </li>
           <li>
-            Puntos de quiebre responsivos en 768px y 480px para móvil y tablet
+            Responsive breakpoints at 768px and 480px for mobile and tablet
           </li>
-          <li>Aseguré navegación por teclado con estados de foco visibles</li>
+          <li>Ensured keyboard navigation with visible focus states</li>
         </ul>
       </section>
     </main>
     <footer>
-      <p>&copy; 2023 Documentación Técnica. Todos los derechos reservados.</p>
+      <p>&copy; 2023 Technical Documentation. All rights reserved.</p>
     </footer>
   </body>
 </html>
